@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number;
+        let raiz;  
+    
+        while (true) {
+            number = parseFloat(prompt("Introduce un número positivo o 0 para terminar:"));
+            
+            
+            if (number === 0) {
+                break;
+            }
+    
+            
+            if (number > 0) {
+                raiz = Math.sqrt(number); 
+                alert("La raíz cuadrada de " + number + " es " + raiz); // Display the result
+            } else {
+                alert("Introduce un número válido (positivo).");
+            }
+        }
+        alert("Programa terminado.");
+    </script>
+</body>
+</html>

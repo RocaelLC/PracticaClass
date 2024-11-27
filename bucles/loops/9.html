@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function verificarParImpar() {
+  let conteoPares = 0;
+
+  while (true) {
+    const entrada = prompt("Ingresa un número o escribe 'stop' para finalizar:");
+
+    if (entrada.toLowerCase() === "stop") {
+      alert(`Programa finalizado. Cantidad de números pares ingresados: ${conteoPares}`);
+      break;
+    }
+
+    const numero = parseInt(entrada, 10);
+
+    if (isNaN(numero)) {
+      alert("Por favor, ingresa un número válido.");
+      continue;
+    }
+
+    if (numero % 2 === 0) {
+      alert("Par");
+      conteoPares++;
+    } else {
+      alert("Impar");
+    }
+  }
+}
+
+verificarParImpar();
+
+</script>
+</body>
+</html>

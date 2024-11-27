@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let product = 1;
+        let number;
+
+        while (true) {
+            number = parseFloat(prompt("introduce un numero o 0 para terminar"));
+            if (number === 0) {
+                break;
+            }
+            if (number > 0) {
+                product *= number;
+            } else {
+                alert("introduce un numero valido");
+            }
+        }
+        alert("el producto final es " + product);
+
+    </script>
+    
+</body>
+
+</html>
